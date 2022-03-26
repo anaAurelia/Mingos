@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="images/logo.png" type="">  <!-- LOGO --> 
+    <title>Mingos Pizzas</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- FUENTES -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header_section d-flex">
+      <div class="container">
+        <nav class="navbar navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="" width="50"  class="d-inline-block align-text-top"> <span class="d-inline-block align-text-top">Mingos Pizzas</span>
+            </a>
+        
+            <ul class="nav justify-content-center ">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">HOME</a>
+               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="armarPizza.html">ARMAR PIZZA</a>
+               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PROMOCIONES</a>
+               </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="modificarPerfil.html"><img src="images/user.png" width="15" height="15"> <span class="sr-only"></span> </a>
+              </li>
+              <li class="nav-item active">
+               <a class="nav-link" href="book.html"><img src="images/carrito.jpg" width="15" height="15"> <span class="sr-only"></span> </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  
+  <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/carousel1.jpg" alt="..." class="d-block w-100">
+        <div class="carousel-caption">
+          <h3>¡Bienvenido a Mingos Pizzas!</h3>
+          <p>Con nosotros encontrarás una gran variedad de pizzas</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel2.jpg" alt="..." class="d-block w-100">
+        <div class="carousel-caption">
+          <h3>Promociones cada semana</h3>
+          <p>No te pierdas las promociones de cada semana</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/caurosel3.jpg" alt="..." class="d-block w-100">
+        <div class="carousel-caption">
+          <h3>Personaliza tu pizza</h3>
+          <p>Arma tu pizza con tus ingredientes preferidos</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel4.jpg" alt="..." class="d-block w-100">
+        <div class="carousel-caption">
+          <h3>Precios accesibles en todas nuestras pizzas</h3>
+          <p>No olvides de acompañar tu pizza con algú producto extra</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <br>
+  <br>
+
+  <h2 class="text-center" style="color: black;">Escoge tu pizza</h2>
+  <br>
+  <main class="container">
+    <div class="row">
+        <div class="col-6 col-md-4">
+          <div class="card">
+            <img src="images/pihawaina.png" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h2 class="card-title" style="color: black;">Pizza Hawaiana</h2>
+              <p class="card-text">La pizza hawaina tiene ingredientes como queso, piña y jamón.</p>
+              <p class="card-text">$120.00</p>
+              <a href="#" class="btn btn-primary mt-2">Detalles</a>
+              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="card">
+            <img src="images/pimix.png" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h2 class="card-title" style="color: black;">Pizza Mixta</h2>
+              <p class="card-text">La pizza mixta tiene ingredientes como queso, jamón, salchicha y salami.</p>
+              <p class="card-text">$180.00</p>
+              <a href="#" class="btn btn-primary mt-2">Detalles</a>
+              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="card">
+            <img src="images/pitaliana.png" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h2 class="card-title" style="color: black;">Pizza italiana</h2>
+              <p class="card-text">La pizza italiana tiene ingredientes como hierbas finas, salsa de tomate, queso cheddar, aceitunas, jitomate, aceite de oliva y champiñones.</p>
+              <p class="card-text">$120.00</p>
+              <a href="#" class="btn btn-primary mt-2">Detalles</a>
+              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="card">
+            <img src="images/piran.png" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h2 class="card-title" style="color: black;">Pizza ranchera</h2>
+              <p class="card-text">La pizza ranchera tiene ingredientes como queso, chorizo, frijoles y jalapeños.</p>
+              <p class="card-text">$120.00</p>
+              <a href="#" class="btn btn-primary mt-2">Detalles</a>
+              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="card">
+            <img src="images/piextra.png" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h2 class="card-title" style="color: black;">Pizza extra-vaganza</h2>
+              <p class="card-text">La pizza extra-vaganza tiene ingredientes como queso, carne molida, peperoni y pimiento verde.</p>
+              <p class="card-text">$120.00</p>
+              <a href="#" class="btn btn-primary mt-2">Detalles</a>
+              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="card">
+            <img src="images/pimexi.png" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h2 class="card-title" style="color: black;">Pizza extra-vaganza</h2>
+              <p class="card-text">La pizza mexicana tiene ingredientes como queso mozzarella, ternera, cebolla roja, chorizo y orégano.</p>
+              <p class="card-text">$120.00</p>
+              <a href="#" class="btn btn-primary mt-2">Detalles</a>
+              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class=" btns container text-center">
+      <!-- Submit button -->
+      <a href="menuAdministrador.html" class="btn btns1 btn-warning btn-block mb-4 me-3 btn-lg">Ver todas las pizzas</a>
+    </div> 
+</main>
+
+<br>
+
+  <div class="pizzasF container-fluid py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-12 text-center">
+            <h3 class="text-uppercase">¡Acompaña tu pizza con algún producto!</h3>
+            <p class="mt-5">
+               Dale un vistazo a los productos extras que tenemos para ti, para que acompañes a tu pizza.
+            </p>
+            <a href="#" class="btn btn-warning mt-3 btn-lg">Ver productos extras</a>
+        </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <h2 class="text-center" style="color: black;">¡Visitanos!</h2>
+  <br>
+  <div class="container">
+    <div class="row">
+  <div class="col-sm-6">
+    <table class="table table-hover text-center mt-3">
+      <thead>
+          <tr>
+              <th class="text-center">Día</th>
+              <th class="text-center">De</th>
+              <th class="text-center">Hasta</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+             <td>Lunes</td>
+              <td>09:00</td>
+              <td>19:00</td>
+          </tr>
+          <tr>
+              <td>Martes</td>
+              <td>09:00</td>
+              <td>19:00</td>
+          </tr>
+          <tr>
+              <td>Miércoles</td>
+              <td>09:00</td>
+              <td>19:00</td>
+          </tr>
+          <tr>
+              <td>Jueves</td>
+              <td>09:00</td>
+              <td>19:00</td>
+          </tr>
+          <tr>
+              <td>Viernes</td>
+              <td>09:00</td>
+              <td>19:00</td>
+          </tr>
+          <tr>
+              <td>Sábado</td>
+              <td>10:00</td>
+              <td>14:00</td>
+          </tr>
+          <tr>
+              <td>Domingo</td>
+              <td>Cerrado</td>
+              <td>Cerrado</td>
+          </tr>
+      </tbody>
+ </table>
+  </div>
+ 
+
+  <div class="mapa1 col-sm-6">
+    <div class="cont mx-auto">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d234.77231139358815!2d-101.26792226202329!3d19.69742017108084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d19.4225188!2d-98.1252688!4m5!1s0x842d0916ac176737%3A0x3574d9d0c1c40309!2smingos%20pizzas!3m2!1d19.6975286!2d-101.2678768!5e0!3m2!1ses-419!2smx!4v1646252889692!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+  </div>
+</div>
+
+<br>
+
+
+<!--Footer--->
+<footer class="footer_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 footer-col">
+        <div class="footer_contact">
+          <h4>
+            Contáctanos 
+          </h4>
+          <div class="contact_link_box">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Ubicación
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+              LLama a +01 800 Mingos
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                mingospizzas@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 footer-col">
+        <div class="footer_detail">
+          <a href="" class="footer-logo">
+          
+          </a>
+          <div class="footer_social">
+              <a href="">
+                <i ><img class="facebook" src="images/facebook.jpg"></i>
+              </a>
+              <a href="">
+                <i><img class="instagram" src="images/instagram.png"></i>
+              </a>
+              <a href="">
+                <i><img class="twitter" src="images/twitter.png"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+          
+</footer>    
+  </footer>
+    </main>
+</body>
+</html>
