@@ -1,16 +1,48 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+  /*background-image: url(images/dibujos.jpg);
+  background-size: repeat;*/
+   background-color: #fafafa;
+  
 }
 
 
 /* BODYS CON FONDOS */
 .inicioS{
-  background-image: url('https://www.crushpixel.com/big-static18/preview4/preparation-fresh-homemade-pizza-with-2849457.jpg');
+  background-image: url(images/PIZZZAA.jpg);
   background-size: cover;
+  width: 100%;
+  height: 100%;
   background-attachment: fixed;   
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
 }
+
+.admin{
+  background-image: url(images/pizzasAdmin.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;   
+  backdrop-filter: blur(4px);
+}
+
+
+ .pizzasF {
+  background-image: url(images/pizz.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+@media (min-width: 992px) {
+  .pizzasF {
+      background-size: cover;
+  }
+}
+
+
 
 
 /* HEADER */ 
@@ -26,6 +58,9 @@ body{
   
 
   /* NAV */
+  .nav-item{
+    font-size: 16px;
+  }
   .navbar-brand {
     font-family: 'Poppins', sans-serif;
   }
@@ -44,7 +79,7 @@ body{
     padding-left: 18%;
   }
   
-  .custom_nav-container .navbar-nav .nav-item .nav-link {
+   .nav-item .nav-link {
     padding: 5px 20px;
     color: #ffffff;
     text-align: center;
@@ -54,7 +89,7 @@ body{
     transition: all 0.3s;
   }
   
-  .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+   .nav-item:hover .nav-link:hover {
     color: #FF7F00;
   }
   
@@ -87,13 +122,13 @@ body{
 
   .links{
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
   }
 
   .link{
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 15px;
     text-decoration: none;
     color: #1a2537;
     font-weight: 600;
@@ -109,7 +144,7 @@ body{
     display:block;
     margin-left: auto;
     margin-right: auto;
-   width: 300px;
+   width: 250px;
    margin-bottom: 60px;
  }
 
@@ -117,9 +152,12 @@ body{
   display:block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 60px;
+  width: 350px;
+
 }
 
-.agregarpizzas{
+.agregarpizzas{ /*imagen pizza*/
   display:block;
   margin-left: auto;
   margin-right: auto;
@@ -130,7 +168,7 @@ body{
   display:block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .produc{
@@ -140,39 +178,56 @@ body{
   width: 190px;
 }
 
-
+.promocion{
+  background:#272524; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px; /*ancho*/
+  height: 450px;  /*altura*/
+  border-radius: 15%;
+}
 
   /* TÍTULOS */
   h2{
+    font-family: 'Poppins', sans-serif;
+    color: #fafafa;
+    margin-top: 30px;
+  }
+
+  .tituloU{
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
     margin-top: 30px;
   }
 
   /* FORMULARIOS */
   .formulario{
-  background:#FF9429; 
+  background: #FF9429; 
   margin-left: auto;
   margin-right: auto;
-  width: 350px; /*ancho*/
+  width: 320px; /*ancho*/
   height: 350px;  /*altura*/
   margin-top: 100PX;
   border-radius: 15%;
   box-shadow: 6px 20px 10px black;
   }
   
-  .res{
-    margin-top: 100PX;
+  .formulario2{
+    background:#FF9429; 
     margin-left: auto;
     margin-right: auto;
-    background:#FF9429; 
-    width: 450px;
-    height: 450px; 
+    width: 620px; /*ancho*/
+    height: 550px;  /*altura*/
     border-radius: 15%;
-  }
+    box-shadow: 6px 20px 10px black;
+    }
+  
 
   .form-label{
-    font-size: 14px;
-    margin-bottom: 2px;
+    /*font-size: 15px;*/
+    margin-bottom: 12px;
     margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
   }
 
   .form-label2{
@@ -184,26 +239,22 @@ body{
   } 
 
   .form-control{
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 10px;
-    font-size: 13px;
+    /*font-size: 1px;*/
     text-align:center;
-    width: 80%;
+    width: 60%;
     height: 30px;
-    padding: 0px;
     border-color: slategray;
     border-radius: 10px;
-    margin-top: 3px;
+    /*margin-top: 200px;*/
     font-family: 'Poppins', sans-serif;
   }
-
 
   .form-control1{
     margin-bottom: 10px;
     font-size: 13px;
     text-align: center;
-    width: 10%;
+    width: 6px;
     height: 30px;
     padding: 10px;
     border-radius: 10px;
@@ -211,9 +262,33 @@ body{
     font-family: 'Poppins', sans-serif;
   }
 
-  
-  
+  .form-controlP{ /*CARRITO*/
+    font-size: 13px;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 45px;
+    font-family: 'Poppins', sans-serif;
+  }  
 
+  .form-controlUs{ /*BUSCAR USUARIO*/
+    font-size: 13px;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+  }  
+
+  .formA{
+    color: #fafafa;
+  }
+
+  
   /* BOTONES */
   .button{
     display:block;
@@ -230,15 +305,15 @@ body{
     text-align: center;
     margin-top: 10PX;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: -12px;
+    margin-bottom: -24px;
   }
 
-  .button2{
+  .button2{ /*Botones de administrador*/
     display:block;
     margin-left: auto;
     margin-right: auto;
     border: none;
-    width: 30%;
+    width: 10%;
     color: white;
     font-size: 15px;
     background:  #000000;
@@ -246,26 +321,30 @@ body{
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
-    margin-top: 25PX;
+    margin-top: -90PX;
     font-family: 'Poppins', sans-serif;
     margin-bottom: -12px;
   }
-
+  
   .btns{
     margin-top: 20px;
   }
 
+  .btns1{
+    margin-top: 35px;
+    margin-bottom: 60px;
+  }
+
+
   .btns2{
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 1px;
+    margin-bottom: 45px;
     width: 250px;
-    height: 100px;
-    border-radius: 10px;
+    height: 80px;
+    font-family: 'Poppins', sans-serif;
   }
   
-
- 
-
+  
   /* FOOTER*/ 
   .footer_section {
     background-color: #000000;
@@ -521,7 +600,14 @@ body{
 }
 
 .table{
-  background-color: rgb(19, 19, 19);
+  margin-top: -50px;
+  color: #ffffff;
+  text-align: center;
+  border: #000000;
+}
+
+.table-carrito{
+  margin-top: -50px;
   color: #ffffff;
   text-align: center;
   border: #000000;
@@ -547,13 +633,20 @@ body{
 }
 
 
-
-
-
-
-
 .maps{
   margin-top: 80px;
+}
+
+/*CONTENEDORES*/
+.contenedorT{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+ background-color: black;
+ width: 60%;
+ border-radius: 15px;
 }
 
 
@@ -563,5 +656,9 @@ body{
     height: initial;
   }
 
+ 
   
-}
+    
+  }
+
+  

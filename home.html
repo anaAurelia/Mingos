@@ -7,17 +7,18 @@
     <title>Mingos Pizzas</title>
     <link href="style.css" rel="stylesheet" />
 
-    <!-- FUENTES -->    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- BOOTSTRAP--> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+       <!-- FUENTES -->    
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+   
+       <!-- BOOTSTRAP--> 
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
@@ -31,19 +32,22 @@
         
             <ul class="nav justify-content-center ">
               <li class="nav-item">
-                <a class="nav-link active" href="home.html">HOME</a>
+                <a class="nav-link" href="home.html">HOME</a>
                </li>
               <li class="nav-item">
-                <a class="nav-link" href="armarPizza.html">ARMAR PIZZA</a>
+                <a class="nav-link" href="armarPizza.html">ARMA TU PIZZA</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="armarPizza.html">PIZZAS</a>
                </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">PROMOCIONES</a>
                </li>
               <li class="nav-item">
-               <a class="nav-link" href="#">PRODUCTOS</a>
+               <a class="nav-link" href="productosExtras.html">PRODUCTOS</a>
               </li>
               <li class="nav-item">
-               <a class="nav-link" href="#">CONTACTO</a>
+               <a class="nav-link" href="Contacto.html">CONTACTO</a>
               </li>
               <li class="nav-item">
                <a class="nav-link" href="modificarPerfil.html"><img src="images/user.png" width="15" height="15"> <span class="sr-only"></span> </a>
@@ -112,92 +116,712 @@
   <br>
   <br>
 
-  <h2 class="text-center" style="color: black;">Escoge tu pizza</h2>
-  <br>
-  <main class="container">
-    <div class="row">
-        <div class="col-6 col-md-4">
-          <div class="card">
-            <img src="images/pihawaina.png" class="card-img-top img-fluid">
-            <div class="card-body">
-              <h2 class="card-title" style="color: black;">Pizza Hawaiana</h2>
-              <p class="card-text">La pizza hawaina tiene ingredientes como queso, piña y jamón.</p>
-              <p class="card-text">$120.00</p>
-              <a href="#" class="btn btn-primary mt-2">Detalles</a>
-              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
+  <section class="food_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2 class="text-center" style="color: black;">
+          Escoge tu pizza
+        </h2>
+        <br>
+    </div>
+  
+    <div class="filters-content">
+      <div class="row align-items-start">
+        <div class="col-sm-6 col-lg-4 all pizza">
+          <div class="box">
+            <div>
+              <div class="img-box">
+                <img src="images//pitaliana.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pizza Italiana
+                </h5>
+                <p>
+                  La pizza italiana tiene ingredientes como hierbas finas, salsa de tomate, queso cheddar, aceitunas,
+                  jitomate, aceite de oliva y champiñones. 
+                </p>
+                <div class="options">
+                  <h6>
+                    $120
+                  </h6>
+                  <a href="">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                       c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                       C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                       c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                       C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                       c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                        </g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="col-sm-6 col-lg-4 ">
+          <div class="box">
+            <div>
+              <div class="img-box">
+                <img src="images/pihawaina.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pizza Hawaiana
+                </h5>
+              <p>
+                La pizza hawaina tiene ingredientes como queso, piña y jamón.
+              </p>
+                <div class="options">
+                  <h6>
+                    $120
+                  </h6>
+                  <a href="">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                       c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                       C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                       c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                       C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                       c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                        </g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all pizza">
+          <div class="box">
+            <div>
+              <div class="img-box">
+                <img src="images/pihawaina2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pizza Hawaiana II
+                </h5>
+                <p>
+                  La pizza hawaina tiene ingredientes como queso, piña, jamón, champiñón y jalapeños.
+                </p>
+                <div class="options">
+                  <h6>
+                    $170
+                  </h6>
+                  <a href="">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                       c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                       C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                       c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                       C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                       c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                        </g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all pasta">
+          <div class="box">
+            <div>
+              <div class="img-box">
+                <img src="images/pideli.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pizza Delixia
+                </h5>
+                <p>
+                  La pizza delixia tiene ingredientes como queso, atún, jalapeños, champiñón, aguacate,
+                  (opc. mayonesa).
+                </p>
+                <div class="options">
+                  <h6>
+                    $180
+                  </h6>
+                  <a href="">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                       c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                       C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                       c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                       C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                       c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                        </g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all fries">
+          <div class="box">
+            <div>
+              <div class="img-box">
+                <img src="images/pimexi.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pizza Mexicana
+                </h5>
+                <p>
+                  La pizza mexicana tiene ingredientes como queso, chorizo, jalapeños y cebolla.
+                </p>
+                <div class="options">
+                  <h6>
+                    $120
+                  </h6>
+                  <a href="">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                       c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                       C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                       c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                       C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                       c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                        </g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all pizza">
+          <div class="box">
+            <div>
+              <div class="img-box">
+                <img src="images/piqueso.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Delicious Pizza
+                </h5>
+                <p>
+                  La pizza deliciuos tiene ingredientes como queso cheddar, queso blanco y queso manchego.
+                </p>
+                <div class="options">
+                  <h6>
+                    $180
+                  </h6>
+                  <a href="">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                       c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                       C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                       c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                       C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                       c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                        </g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all burger">
+          <div class="box">
+            <div>
+              <div class="img-box">
+                <img src="images/piran.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pizza Ranchera
+                </h5>
+                <p>
+                  La pizza ranchera tiene ingredientes como queso, chorizo, frijoles y jalapeños.
+                </p>
+                <div class="options">
+                  <h6>
+                    $120
+                  </h6>
+                  <a href="">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                       c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                       C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                       c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                       C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                       c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                        </g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all burger">
+          <div class="box">
+            <div>
+              <div class="img-box">
+                <img src="images/pimix.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pizza Mixta
+                </h5>
+                <p>
+                  La pizza mixta tiene ingredientes como queso, jamón, salchicha y salami.
+                </p>
+                <div class="options">
+                  <h6>
+                    $180
+                  </h6>
+                  <a href="">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                       c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                       C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                       c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                       C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                       c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                        </g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 all pasta">
+          <div class="box">
+            <div>
+              <div class="img-box">
+                <img src="images/piextra.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pizza Extra-vaganza
+                </h5>
+                <p>
+                  La pizza extra-vaganza tiene ingredientes como queso, carne molida, pepperoni y pimiento verde. 
+                </p>
+                <div class="options">
+                  <h6>
+                    $160
+                  </h6>
+                  <a href="">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                       c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                       C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                       c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                       C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                       c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                        </g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                      <g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
 
-        <div class="col-6 col-md-4">
-          <div class="card">
-            <img src="images/pimix.png" class="card-img-top img-fluid">
-            <div class="card-body">
-              <h2 class="card-title" style="color: black;">Pizza Mixta</h2>
-              <p class="card-text">La pizza mixta tiene ingredientes como queso, jamón, salchicha y salami.</p>
-              <p class="card-text">$180.00</p>
-              <a href="#" class="btn btn-primary mt-2">Detalles</a>
-              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
+  
+</section>
+<div class=" btns container text-center">
+  <a href="#" class="btn btns1 btn-warning mt-3 btn-lg me-4">Ver más pizzas</a>
+                </div>
 
-        <div class="col-6 col-md-4">
-          <div class="card">
-            <img src="images/pitaliana.png" class="card-img-top img-fluid">
-            <div class="card-body">
-              <h2 class="card-title" style="color: black;">Pizza italiana</h2>
-              <p class="card-text">La pizza italiana tiene ingredientes como hierbas finas, salsa de tomate, queso cheddar, aceitunas, jitomate, aceite de oliva y champiñones.</p>
-              <p class="card-text">$120.00</p>
-              <a href="#" class="btn btn-primary mt-2">Detalles</a>
-              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4">
-          <div class="card">
-            <img src="images/piran.png" class="card-img-top img-fluid">
-            <div class="card-body">
-              <h2 class="card-title" style="color: black;">Pizza ranchera</h2>
-              <p class="card-text">La pizza ranchera tiene ingredientes como queso, chorizo, frijoles y jalapeños.</p>
-              <p class="card-text">$120.00</p>
-              <a href="#" class="btn btn-primary mt-2">Detalles</a>
-              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4">
-          <div class="card">
-            <img src="images/piextra.png" class="card-img-top img-fluid">
-            <div class="card-body">
-              <h2 class="card-title" style="color: black;">Pizza extra-vaganza</h2>
-              <p class="card-text">La pizza extra-vaganza tiene ingredientes como queso, carne molida, peperoni y pimiento verde.</p>
-              <p class="card-text">$120.00</p>
-              <a href="#" class="btn btn-primary mt-2">Detalles</a>
-              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4">
-          <div class="card">
-            <img src="images/pimexi.png" class="card-img-top img-fluid">
-            <div class="card-body">
-              <h2 class="card-title" style="color: black;">Pizza extra-vaganza</h2>
-              <p class="card-text">La pizza mexicana tiene ingredientes como queso mozzarella, ternera, cebolla roja, chorizo y orégano.</p>
-              <p class="card-text">$120.00</p>
-              <a href="#" class="btn btn-primary mt-2">Detalles</a>
-              <button type="button" class="btn btn-success mt-2">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    <div class=" btns container text-center">
-      <!-- Submit button -->
-      <a href="menuAdministrador.html" class="btn btns1 btn-warning btn-block mb-4 me-3 btn-lg">Ver todas las pizzas</a>
-    </div> 
-</main>
-
-<br>
 
   <div class="pizzasF container-fluid py-5">
     <div class="row justify-content-center">
@@ -327,9 +951,17 @@
             </div>
           </div>
         </div>
-          
-</footer>    
+        
   </footer>
     </main>
+  
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </body>
 </html>
